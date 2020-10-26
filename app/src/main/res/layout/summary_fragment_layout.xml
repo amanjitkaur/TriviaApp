@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        style="@style/HeadingTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SUMMARY"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/candidate_name"
+        style="@style/HeadingTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello Ramesh," />
+
+    <TextView
+        style="@style/ValueTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Here are the answers selected:" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/card_view_margin"
+        app:cardBackgroundColor="#ff7f93"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:cardMaxElevation="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/HeadingTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Who is the best cricketer in the world?" />
+
+            <TextView
+                android:id="@+id/best_cricketer_answer"
+                style="@style/ValueTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Answer: Sachin" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/card_view_margin"
+        app:cardBackgroundColor="#ff7f93"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:cardMaxElevation="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/HeadingTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="What are the colors in the national flag?" />
+
+            <TextView
+                android:id="@+id/national_flag_answer"
+                style="@style/ValueTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Answer: White,Orange,Green" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/history_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/card_view_margin"
+            android:layout_weight="1"
+            android:padding="@dimen/padding_12"
+            android:text="History"
+            android:textAlignment="center"
+            android:textAppearance="@style/ButtonTextStyle" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/finish_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/card_view_margin"
+            android:layout_weight="1"
+            android:padding="@dimen/padding_12"
+            android:text="Finish"
+            android:textAlignment="center"
+            android:textAppearance="@style/ButtonTextStyle" />
+    </LinearLayout>
+</LinearLayout>
